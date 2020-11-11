@@ -1,0 +1,5 @@
+# Single Sign On
+
+If suppose an organization is using some kind of authentication to access multiple websites/services under different domains, then the user has to sign in to all of them individually to access those websites/services. This provides a bad user experience to the user. Also some features may not be accessible if they are sharing between them.
+
+The solution to this is to create a Single Sign On system, where there is a seperate server which will be responsible for authentication. So if a user wants to access the website/service, they will be sent to authentication server where they can enter their credentials to sign in. After signing in they will be sent back to the url from which the request came from. Now if the user wants to access another website/service they will also be sent to the authentication server, but since they are already signed in from before, they will be automatically be sent to the request url. So in this way, the user does not have to sign in multiple times.
